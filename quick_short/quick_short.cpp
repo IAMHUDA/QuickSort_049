@@ -92,3 +92,18 @@ void q_sort(int low, int high)
 	q_sort(j + 1, high);
 }
 
+void display()
+{
+	cout << "\n=====================" << endl;
+	cout << "sorted array" << endl;
+	cout << "\n=====================" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << "\n\nnumber of comparasions" << cmp_count << endl;
+	cout << "\nnumber of data movement" << mov_count << endl;
+
+}
+
